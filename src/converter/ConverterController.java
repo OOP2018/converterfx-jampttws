@@ -39,6 +39,7 @@ public class ConverterController {
 		} catch (NumberFormatException e) {
 			textfield1.setStyle("-fx-text-inner-color: red;");
 			textfield2.setStyle("-fx-text-inner-color: red;");
+			textfield2.setText("invalid");
 		}
        
     }
@@ -47,6 +48,8 @@ public class ConverterController {
 	public void handleClear(ActionEvent event) {
 		textfield1.setText("");
 		textfield2.setText("");	
+		textfield1.setStyle("-fx-text-inner-color: black;");
+		textfield2.setStyle("-fx-text-inner-color: black;");
 	}
 	
 	/**
